@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Equipamento de TI</title>
+    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -20,21 +21,62 @@
     <main class="container">
 
         <section class="pesquisa">
-            <h2>Controle de Equipamentos</h2>
-            <input type="text" placeholder="Digite o número do patrimônio" id="input-pesquisa">
-            <button onclick="pesquisar()">Pesquisar</button>
-            <img >
+            <form>
+                <div class="equipamentos">
+                    <h2>Controle de Equipamentos</h2>
+                    <div class="campo-patrimonio">
+                        <legend><b>Nome ou patrimônio do equipamento:</b></legend>
+                        <div>
+                            <input type="text" placeholder="Todos Equipamentos" id="input-pesquisa">
+                            <button id="btn-pesquisar">Pesquisar</button>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="unidades">
+                    <legend><b>Filtrar por unidade(s):</b></legend>
+                    <div class="campos">
+                        <input type="checkbox" id="unidade1" nome="unidade1" value="caraguatatuba" for="unidade1">
+                        <label for="unidade1">Caraguatatuba</label>
+                        <br>
+                        <input type="checkbox" id="unidade2" nome="unidade2" value="Cetas Lorena" for="unidade2">
+                        <label for="unidade2">Cetas Lorena</label>
+                        <br>
+                        <input type="checkbox" id="unidade3" nome="unidade3" value="Ribeirão Preto" for="unidade3">
+                        <label for="unidade3">Ribeirão Preto</label>
+                        <br>
+                        <input type="checkbox" id="unidade4" nome="unidade4" value="São José do Rio Preto"
+                            for="unidade4">
+                        <label for="unidade4">São José do Rio Preto</label>
+                        <br>
+                        <input type="checkbox" id="unidade5" nome="unidade5" value="Santos" for="unidade5">
+                        <label for="unidade5">Santos</label>
+                        <br>
+                        <input type="checkbox" id="unidade6" nome="unidade6" value="Supes-sp" for="unidade6">
+                        <label for="unidade6">Supes SP</label>
+                        <br>
+                        <input type="checkbox" id="unidade7" nome="unidade7" value="Viracopos" for="unidade7">
+                        <label for="unidade7">Viracopos AR</label>
+                        <br>
+                        <input type="checkbox" id="unidade8" nome="unidade8" value="Guarulhos" for="unidade8">
+                        <label for="unidade8">Guarulhos AR</label>
+                    </div>
+                </fieldset>
+            </form>
         </section>
 
         <section class="descricao" id="pesquisa"></section>
 
     </main>
     <footer>
-        <p>&copy; 2024 Site com objetivo de aprendizado é um protótipo para um sistema de patrimônido de uma unidade do IBAMA-SP. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Site com objetivo de aprendizado é um protótipo para um sistema de patrimônido de uma unidade do
+            IBAMA-SP. Todos os direitos reservados.</p>
         <p></p>
     </footer>
     <script src="javaScript/dados.js"></script>
-    <script src="javaScript/app.js"></script>
+    <!-- <script src="javaScript/app.js"></script> -->
+    <script src="javaScript/appV2.js"></script>
+    <!-- <script src="./javaScript/checbox.js"></script> -->
+    <!-- <script src="teste.js"></script> -->
 </body>
 
 </html>
